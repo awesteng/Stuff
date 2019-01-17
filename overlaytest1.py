@@ -10,6 +10,10 @@ camera.framerate = 24
 button = Button(2)
 camera.start_preview()
 
+def default():
+    camera.start_preview()
+    time.sleep(10)
+
 def overlay():
 
   img = Image.open('CFoa1.gif')
@@ -35,5 +39,5 @@ def overlay():
 
 
 while True:
-    button.when_pressed = overlay.on
-    button.when_released = overlay.off
+    button.when_pressed = overlay()
+    button.when_released = default()
