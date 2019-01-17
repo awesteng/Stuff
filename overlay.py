@@ -9,6 +9,7 @@ camera.start_preview()
 
 # Load the arbitrarily sized image
 img = Image.open('CFoa1.gif')
+Image.framerate = 4
 # Create an image padded to the required size with
 # mode 'RGB'
 pad = Image.new('RGB', (
