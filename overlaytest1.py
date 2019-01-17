@@ -36,7 +36,7 @@ def overlay():
     o.alpha = 128
     o.layer = 3
 
-    return None
+    
 
 # Wait indefinitely until the user terminates the script
 try:
