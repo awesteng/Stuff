@@ -34,6 +34,7 @@ def overlay():
   o.layer = 3
 
 def stop():
+    Image.close()
     camera.remove_overlay()
 
 
