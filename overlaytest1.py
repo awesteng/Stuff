@@ -42,4 +42,4 @@ def overlay():
 
 while True:
     button.when_pressed = overlay()
-    button.when_released = default()
+    button.when_released = main()
