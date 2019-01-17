@@ -40,4 +40,4 @@ def overlay():
         sleep(1)
 while True:
     button.when_pressed = overlay()
-    return
+    button.when_released = exit()
