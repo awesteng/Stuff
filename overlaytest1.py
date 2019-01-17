@@ -33,11 +33,12 @@ def overlay():
   o.alpha = 128
   o.layer = 3
 
+def stop():
+    camera.remove_overlay()
 
 
 # Wait indefinitely until the user terminates the script
-try:
+while True:
     button.when_pressed = overlay()
-
-    except button.when_released:
-       return overlay()
+except:
+    button.when_released = stop()
