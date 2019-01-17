@@ -37,7 +37,7 @@ def overlay():
 
 # Wait indefinitely until the user terminates the script
 try:
-     with Button(2, hold_time=0) as button:
-         button.when_held = overlay()
-   except button.when_released:
+    button.when_pressed = overlay()
+
+    except button.when_released:
        return overlay()
