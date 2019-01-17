@@ -35,8 +35,9 @@ def overlay():
     o.alpha = 128
     o.layer = 3
 
+    return None
+
 # Wait indefinitely until the user terminates the script
 while True:
-    button.wait_for_press()
-    overlay()
-    sleep(0.1)
+    button.when_pressed = overlay()
+    button.when_released = pause()
