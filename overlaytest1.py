@@ -9,7 +9,7 @@ camera.framerate = 24
 button = Button(2)
 camera.start_preview()
 
-while:
+while True:
 button.when_pressed = overlay()
 button.when_released = camera.start_preview()
 
