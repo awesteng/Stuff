@@ -1,4 +1,4 @@
-import PiCamera
+import picamera
 
 camera = picamera.PiCamera()
 camera.resolution = (1920, 1080)
