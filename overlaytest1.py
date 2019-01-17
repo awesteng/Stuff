@@ -10,8 +10,7 @@ camera.framerate = 24
 button = Button(2)
 camera.start_preview()
 
-def preview():
-    camera.start_preview()
+
 
 def overlay():
 
@@ -37,8 +36,7 @@ def overlay():
     o.layer = 3
 
 # Wait indefinitely until the user terminates the script
-
-if button.when_pressed True:
+while True:
+    button.wait_for_press()
     overlay()
-else:
-    preview()
+    sleep(0.1)
