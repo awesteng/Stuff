@@ -42,7 +42,7 @@ def default():
     Image.close()
 
 
-if button.when_pressed:
+if button.when_pressed():
     overlay()
-else button.when_released:
+else button.when_released():
     default()
