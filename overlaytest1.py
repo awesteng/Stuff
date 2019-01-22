@@ -9,6 +9,7 @@ camera.framerate = 24
 button = Button(2)
 camera.start_preview()
 
+overlay()
 
 
 def overlay():
