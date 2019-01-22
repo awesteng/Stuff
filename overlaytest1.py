@@ -36,7 +36,7 @@ def overlay():
 
 # Wait indefinitely until the user terminates the script
     while True:
-    sleep(1)
+        sleep(1)
 
 button.when_pressed = overlay()
 button.when_released = Image.close('Cfoa1.gif')
