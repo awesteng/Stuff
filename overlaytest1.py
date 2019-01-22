@@ -37,9 +37,10 @@ def overlay():
   o.alpha = 128
   o.layer = 3
 
-  main()
+  if button.when_released:
+      img = Image.close()
+
 
 
 while True:
     button.when_pressed = overlay()
-    button.when_released = main()
