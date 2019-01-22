@@ -9,7 +9,7 @@ camera.framerate = 24
 button = Button(2)
 camera.start_preview()
 
-button.wait_for_press()
+button.when_pressed()
 
 
 # Load the arbitrarily sized image
