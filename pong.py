@@ -34,7 +34,7 @@ ball = pygame.Rect(ballX, ballY, line_thickness, line_thickness)
 def drawArena():
     screen.fill((0,0,0))
     # Draw outline of arena
-    pygame.draw.line(screen, white, ((0,0),(window_width,window_height)), line_thickness*2)
+    pygame.draw.rect(screen, white, ((0,0),(window_width,window_height)), line_thickness*2)
     # Draw centre line
     pygame.draw.line(screen, white, ((int(window_width/2)),0),((int(window_width/2)),window_height), (int(line_thickness/4)))
 
