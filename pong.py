@@ -114,7 +114,7 @@ while True: # Infinite loop. Press Ctrl-C to quite game
         # Mouse movement
         elif event.type == MOUSEMOTION:
             mousex, mousey = event.pos
-            paddle.y = mousey
+            paddle1.y = mousey
 
     drawArena()
     drawPaddle(paddle1)
