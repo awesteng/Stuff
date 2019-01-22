@@ -51,7 +51,7 @@ def drawPaddle(paddle):
 
 # Function to draw the ball
 def drawBall(ball):
-    pygame.draw.rect(sreen, white, ball)
+    pygame.draw.rect(screen, white, ball)
 
 # Function to move the ball
 def moveBall(ball, ballDirX, ballDirY):
