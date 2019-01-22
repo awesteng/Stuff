@@ -10,9 +10,7 @@ camera.framerate = 24
 button = Button(2)
 camera.start_preview()
 
-def default():
-    camera.start_preview()
-    time.sleep(10)
+
 
 def overlay():
 
@@ -37,10 +35,14 @@ def overlay():
   o.alpha = 128
   o.layer = 3
 
-  if button.when_released:
-      img = Image.close()
+  while True:
+      sleep(1)
+
+def default():
+    Image.close()
 
 
-
-while True:
-    button.when_pressed = overlay()
+if button.when_pressed:
+    overlay()
+else button.when_released:
+    default()
