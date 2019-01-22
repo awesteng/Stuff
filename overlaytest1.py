@@ -11,32 +11,32 @@ camera.start_preview()
 
 button.when_pressed()
 
-
+def overlay():
 # Load the arbitrarily sized image
-img = Image.open('CFoa1.gif')
-Image.framerate = 4
+    img = Image.open('CFoa1.gif')
+    Image.framerate = 4
 # Create an image padded to the required size with
 # mode 'RGB'
-pad = Image.new('RGB', (
-    ((img.size[0] + 31) // 32) * 32,
-    ((img.size[1] + 15) // 16) * 16,
-    ))
+    pad = Image.new('RGB', (
+        ((img.size[0] + 31) // 32) * 32,
+        ((img.size[1] + 15) // 16) * 16,
+        ))
 # Paste the original image into the padded one
-pad.paste(img, (0, 0))
+    pad.paste(img, (0, 0))
 
 # Add the overlay with the padded image as the source,
 # but the original image's dimensions
-o = camera.add_overlay(pad.tobytes(), size=img.size)
+    o = camera.add_overlay(pad.tobytes(), size=img.size)
 # By default, the overlay is in layer 0, beneath the
 # preview (which defaults to layer 2). Here we make
 # the new overlay semi-transparent, then move it above
 # the preview
-o.alpha = 128
-o.layer = 3
+    o.alpha = 128
+    o.layer = 3
 
 # Wait indefinitely until the user terminates the script
-while True:
+    while True:
     sleep(1)
 
-button.when_released()
-img = Image.close('Cfoa1.gif')
+button.when_pressed = overlay()
+button.when_released = Image.close('Cfoa1.gif')
