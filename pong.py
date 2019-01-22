@@ -2,8 +2,8 @@ import pygame, sys
 from pygame.locals import *
 
 #Set up game variables
-window_width = 400
-window_height = 300
+window_width = 800
+window_height = 700
 line_thickness = 10
 paddle_size = 50 #try making this smaller for a harder game
 paddle_offset = 20
