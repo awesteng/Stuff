@@ -9,7 +9,7 @@ camera.framerate = 24
 button = Button(2)
 camera.start_preview()
 
-button.when_pressed()
+
 
 def overlay():
 # Load the arbitrarily sized image
