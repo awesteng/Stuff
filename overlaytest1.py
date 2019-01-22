@@ -38,4 +38,5 @@ o.layer = 3
 while True:
     sleep(1)
 
-button.when_released() Image.close('Cfoa1.gif')
+button.when_released()
+img = Image.close('Cfoa1.gif')
