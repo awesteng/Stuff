@@ -12,6 +12,7 @@ camera.start_preview()
 
 
 def overlay():
+    button.wait_for_press()
 # Load the arbitrarily sized image
     img = Image.open('CFoa1.gif')
     Image.framerate = 4
@@ -37,6 +38,3 @@ def overlay():
 # Wait indefinitely until the user terminates the script
     while True:
         sleep(1)
-
-while button.is_pressed:
-    overlay()
