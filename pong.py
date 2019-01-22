@@ -71,7 +71,7 @@ def checkEdgeCollision(ball, ballDirX, ballDirY):
 def checkHitBall(ball, paddle1, paddle2, ballDirX):
     if ballDirX == -1 and paddle1.right == ball.left and paddle1.top < ball.top and paddle1.bottom > ball.bottom:
         return -1 # return new direction (right)
-    elif ballDirx == 1 and paddle2.left == ball.right and paddle2.top < ball.top and paddle2.bottom > ball.bottom:
+    elif ballDirX == 1 and paddle2.left == ball.right and paddle2.top < ball.top and paddle2.bottom > ball.bottom:
         return -1 # return new direction (right)
     else:
         return 1 # return new direction (left)
