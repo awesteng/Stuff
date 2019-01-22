@@ -27,7 +27,7 @@ playerTwoPosition = (window_height - paddle_size) /2
 
 # Create rectangles for ball and paddles
 paddle1 = pygame.Rect(paddle_offset,playerOnePosition, line_thickness,paddle_size)
-paddle2 = pygameRect(window_width - paddle_offset - line_thickness, playerTwoPosition, line_thickness, paddle_size)
+paddle2 = pygame.Rect(window_width - paddle_offset - line_thickness, playerTwoPosition, line_thickness, paddle_size)
 ball = pygame.Rect(ballX, ballY, line_thickness, line_thickness)
 
 # Function to draw the arena
