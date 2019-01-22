@@ -38,5 +38,5 @@ def overlay():
     while True:
         sleep(1)
 
-while button.is_pressed():
+while button.is_pressed:
     overlay()
